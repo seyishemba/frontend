@@ -55,13 +55,21 @@
 
 
         <!-- Nav tabs -->
+        <div>
+          
       <ul class="nav nav-tabs page-tabs" role="tablist">
-        <li role="presentation" class="active button bg-white p-3 font-semibold "><a href="#home" aria-controls="home" role="tab" data-toggle="tab"  >Services</a></li>
-        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reports</a></li>
-        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Invoices</a></li>
-        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Contacts</a></li>
+        <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"  class="active button bg-white p-3 font-semibold " >Services</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Reports</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Invoices</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Contacts</a></li>
       </ul>
-
+          
+          </div>
+      <style>
+        .page-tabs .active{
+           border-top: 2px solid rgb(34 197 94)
+        }    
+      </style>
       <!-- Tab panes -->
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="home">
