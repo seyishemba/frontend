@@ -55,16 +55,14 @@
 
 
         <!-- Nav tabs -->
-        <div>
           
-      <ul class="nav nav-tabs page-tabs p-1" role="tablist">
+      <ul class="nav nav-tabs page-tabs  mb-3" role="tablist">
         <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"  class="active button bg-white p-3 font-semibold " >Services</a></li>
-        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Reports</a></li>
-        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Invoices</a></li>
-        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Contacts</a></li>
+        <li role="presentation"><a href="#home" aria-controls="profile" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Reports</a></li>
+        <li role="presentation"><a href="#home" aria-controls="messages" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Invoices</a></li>
+        <li role="presentation"><a href="#home" aria-controls="settings" role="tab" data-toggle="tab"  class=" button bg-white p-3 font-semibold ">Contacts</a></li>
       </ul>
           
-          </div>
       <style>
         .page-tabs .active{
            border-top: 2px solid rgb(34 197 94)
@@ -83,63 +81,48 @@
       </div>
       </div>
         </div>
-        <div role="tabpanel" class="tab-pane" id="profile">...</div>
-        <div role="tabpanel" class="tab-pane" id="messages">.dsd..</div>
-        <div role="tabpanel" class="tab-pane" id="settings">...</div>
       </div>
 
-      <div class="table-buttons flex flex-row gap-px pt-2">
-        <div class="button border-t-2 border-green-500 bg-white p-2 font-semibold "><button class="p-2">Services</button></div>
-        <div class=" p-2 text-sm font-semibold"><button class="p-2">Repots</button></div>
-        <div class=" p-2 font-semibold"><button class="p-2">Invoices</button></div>
-        <div class=" p-2 font-semibold"><button class="p-2">Contacts</button></div>
-      </div>
-      <div class="space-bar w-full bg-white h-12"></div>
-      <div class="space-bar w-full p-2 text-sm font-bold bg-[#D8DBE5] "><p>Service type</p></div>
-
-      <div class="space-bar w-full p-2 text-sm  bg-white gap-y-4 flex mb-1" style="justify-content: space-between;" ><p>Penetration Testing</p>
-        <div class="status flex "><p class="pr-2">Active</p> <label class="switch">
-       <input type="checkbox" checked>
-       <span class="slider round"></span>
-      </label>
-      </div>
-      </div>
-
-      <div class="space-bar w-full p-2 text-sm  bg-white gap-y-4 flex mb-1" style="justify-content: space-between;" ><p>Penetration Testing</p>
-        <div class="status flex "><p class="pr-2">Active</p> <label class="switch">
-       <input type="checkbox" checked>
-       <span class="slider round"></span>
-      </label>
-      </div>
-      </div>
-
-      <div class="space-bar w-full p-2 text-sm  bg-white gap-y-4 flex mb-1" style="justify-content: space-between;" ><p>Penetration Testing</p>
-        <div class="status flex "><p class="pr-2">Active</p> <label class="switch">
-       <input type="checkbox" checked>
-       <span class="slider round"></span>
-      </label>
-      </div>
-      </div>
-
-      <div class="space-bar w-full p-2 text-sm  bg-white gap-y-4 flex mb-1" style="justify-content: space-between;" ><p>Penetration Testing</p>
-        <div class="status flex "><p class="pr-2">Active</p> <label class="switch">
-       <input type="checkbox" checked>
-       <span class="slider round"></span>
-      </label>
-      </div>
-      </div>
-
-      <div class="space-bar w-full p-2 text-sm  bg-white gap-y-4 flex mb-1" style="justify-content: space-between;" ><p>Penetration Testing</p>
-        <div class="status flex "><p class="pr-2">Active</p> <label class="switch">
-       <input type="checkbox" checked>
-       <span class="slider round"></span>
-      </label>
-      </div>
+          
       </div>
 
 
-        </div>
         <div class="side-section relative  flex flex-col">
+          <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative inline-block text-left">
+  <div>
+    <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      Options
+      <!-- Heroicon name: solid/chevron-down -->
+      <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+
+  <!--
+    Dropdown menu, show/hide based on menu state.
+
+    Entering: "transition ease-out duration-100"
+      From: "transform opacity-0 scale-95"
+      To: "transform opacity-100 scale-100"
+    Leaving: "transition ease-in duration-75"
+      From: "transform opacity-100 scale-100"
+      To: "transform opacity-0 scale-95"
+  -->
+  <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+    <div class="py-1" role="none">
+      <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+      <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+      <form method="POST" action="#" role="none">
+        <button type="submit" class="text-gray-700 block w-full text-left px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
+      </form>
+    </div>
+  </div>
+</div>
+
            <div class="first-box relative shadow-md bg-white w-96 pl-3  pt-5 pb-3 flex mb-4">
         <div class="rol-1">
           <p class=" pb-2 text-sm">Company Info</p>
