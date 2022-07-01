@@ -6,3 +6,8 @@
 .move{
   transform:translateX(10px);
 }
+
+
+.bank-name {
+  font-family: 'Sora', sans-serif;
+}
